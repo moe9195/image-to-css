@@ -1,14 +1,14 @@
+
 .container {
   padding: 0 2rem;
+  background-color: #121212;
+  color: #fff;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -16,9 +16,9 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  opacity: 0.5;
 }
 
 .footer a {
@@ -48,6 +48,25 @@
 .title,
 .description {
   text-align: center;
+  opacity: 0.7;
+}
+
+.outputText {
+  overflow: 'auto';
+  font-size: '14px';
+  font-family: 'Fira Code', monospace;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.outputPaper {
+  margin: 4rem;
+  width: 20vw;
+}
+
+.css {
+  width: 20vw;
+  max-height: 20vw;
 }
 
 .description {
@@ -63,6 +82,10 @@
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.hidden {
+  display: none;
 }
 
 .grid {
@@ -114,3 +137,5 @@
     flex-direction: column;
   }
 }
+
+
