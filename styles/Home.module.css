@@ -64,6 +64,15 @@
   width: 20vw;
 }
 
+.helperText {
+  background-color: #121212;
+  margin: 0px;
+}
+
+.link {
+  padding: 5px;
+}
+
 .css {
   width: 20vw;
   max-height: 20vw;

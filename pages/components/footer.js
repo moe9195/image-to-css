@@ -1,15 +1,37 @@
+import React from 'react'
+import Typography from '@material-ui/core/Typography'
+import Link from '@material-ui/core/Link'
+
+const links = [
+  {
+    label: '©2021',
+    src: ''
+  },
+  {
+    label: '@moerahmeh95',
+    src: 'https://mrahmeh.netlify.app/'
+  },
+  {
+    label: 'github',
+    src: 'https://github.com/moe9195'
+  },
+]
+
 const Footer = ({ styles }) => {
+
   return (
-    <footer className={styles.footer}>
-      <a
-        href="https://github.com/moe9195"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <span className={styles.logo}>Image</span>
-      </a>
-    </footer>
-  );
-};
+    <div className={styles.footer}>
+      {links.map((link) => (
+        <Typography className={styles.linkTypography} key={link.label}>
+          <Link className={styles.link} href={link.src} target="_blank">
+            {link.label}
+          </Link>
+        </Typography>
+        )
+      )}
+   </div>
+  )
+}
+
 
 export default Footer;

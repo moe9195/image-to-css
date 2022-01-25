@@ -16,10 +16,6 @@ const rgbToHex = (rgb) =>
 const imgDataToCSS = (imgData) => {
   let shadowStyle = "";
   let photoCSS = `.drawing {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    margin-left: -200px;
     width: 0;
     height: 0;
     box-shadow:\n`;
@@ -47,6 +43,7 @@ const UploadImage = ({
   setImage,
   setInlineStyle,
   setCSS,
+  css,
   loading,
   setLoading,
 }) => {
@@ -110,7 +107,7 @@ const UploadImage = ({
           aria-label="upload picture"
           component="span"
         >
-          {loading ? "Generating..." : "Get started by uploading an image"}
+          {loading ? "Generating..." : css ? "Upload another image" : "Get started by uploading an image"}
         </LoadingButton>
       </label>
 

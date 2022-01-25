@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Footer from "./components/footer.js";
 import Main from "./components/main.js";
+import Title from "./components/title.js";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const darkTheme = createTheme({
@@ -25,6 +26,7 @@ const Home = () => {
             rel="stylesheet"
           />
         </Head>
+        <Title styles={styles} />
         <Main styles={styles} />
         <Footer styles={styles} />
       </div>
