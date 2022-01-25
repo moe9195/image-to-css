@@ -4,7 +4,7 @@ import styles from "../../styles/Home.module.css";
 
 const Title = () => {
   return (
-    <div className={styles.description}>
+    <div className={styles.title}>
       Turn any image into pure CSS. Inspired by 
       <Link href="https://codepen.io/jaysalvat/pen/HaqBf" target="_blank">
         {" jaysalvat"}

@@ -84,6 +84,12 @@
   font-size: 1.5rem;
 }
 
+.title {
+  margin-top: 2rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
 .code {
   background: #fafafa;
   border-radius: 5px;
