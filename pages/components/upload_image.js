@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import LoadingButton from "@mui/lab/LoadingButton";
 import PhotoCamera from "@mui/icons-material/PhotoCamera";
+import styles from "../../styles/Home.module.css";
 
 const getColorIndicesForCoord = (x, y, imgData) => {
   const data = imgData.data;
@@ -38,7 +39,6 @@ const imgDataToCSS = (imgData) => {
 };
 
 const UploadImage = ({
-  styles,
   image,
   setImage,
   setInlineStyle,

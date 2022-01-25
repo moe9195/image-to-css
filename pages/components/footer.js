@@ -1,6 +1,7 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Link from '@material-ui/core/Link'
+import styles from "../../styles/Home.module.css";
 
 const links = [
   {
@@ -17,7 +18,7 @@ const links = [
   },
 ]
 
-const Footer = ({ styles }) => {
+const Footer = () => {
 
   return (
     <div className={styles.footer}>

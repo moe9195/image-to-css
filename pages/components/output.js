@@ -6,8 +6,9 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import FormHelperText from '@mui/material/FormHelperText';
 import CopyIcon from "@mui/icons-material/Assignment";
+import styles from "../../styles/Home.module.css";
 
-const Output = ({ styles, css }) => {
+const Output = ({ css }) => {
   const [copiedCSS, setCopiedCSS] = useState(false);
   const [copiedHTML, setCopiedHTML] = useState(false);
 
@@ -35,7 +36,6 @@ const Output = ({ styles, css }) => {
             multiline
             disabled
             rows={15}
-            rowsMax={15}
             value={css}
             variant="outlined"
             InputProps={{
@@ -68,7 +68,6 @@ const Output = ({ styles, css }) => {
             multiline
             disabled
             rows={15}
-            rowsMax={15}
             value={css && `<div class="drawing"></div>`}
             variant="outlined"
             InputProps={{

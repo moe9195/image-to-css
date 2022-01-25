@@ -20,15 +20,15 @@ const Home = () => {
           <meta name="image-to-css" content="Convert image to CSS" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link
             href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap"
             rel="stylesheet"
           />
         </Head>
-        <Title styles={styles} />
-        <Main styles={styles} />
-        <Footer styles={styles} />
+        <Title />
+        <Main />
+        <Footer />
       </div>
     </ThemeProvider>
   );
