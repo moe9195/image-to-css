@@ -66,7 +66,7 @@
 
 .helperText {
   background-color: #121212;
-  margin: 0px;
+  margin: 0px!important;
 }
 
 .link {
